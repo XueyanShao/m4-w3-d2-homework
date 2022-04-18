@@ -7,6 +7,7 @@ const express = require("express");
   passportLocalMongoose = require("passport-local-mongoose");
   User = require("./models/user");
   mongoSanitize = require('express-mongo-sanitize');
+  rateLimit = require('express-rate-limit');
   xss = require('xss-clean');
   helmet = require('helmet');
 
